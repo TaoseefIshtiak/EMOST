@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.quanfield.emost.FXMLController">
+   <children>
+      <TextField fx:id="appliancesName" layoutX="84.0" layoutY="116.0" />
+      <Label layoutX="58.0" layoutY="42.0" text="Enter your Applances List Below:" />
+      <TextField fx:id="appliancesNumber" layoutX="424.0" layoutY="115.0" prefHeight="26.0" prefWidth="87.0" />
+      <TextField fx:id="appliancesWattage" layoutX="291.0" layoutY="113.0" prefHeight="26.0" prefWidth="87.0" />
+      <Button layoutX="229.0" layoutY="162.0" mnemonicParsing="false" onAction="#addApplianceAction" prefHeight="26.0" prefWidth="147.0" text="Add Appliance" />
+      <Button layoutX="223.0" layoutY="200.0" mnemonicParsing="false" onAction="#checkApplianceListAction" text="Check Appliances List" underline="true" />
+      <TextArea fx:id="applianceListDisplay" layoutX="20.0" layoutY="239.0" prefHeight="188.0" prefWidth="563.0" />
+      <Button layoutX="502.0" layoutY="187.0" mnemonicParsing="false" onAction="#generateConsumptionPage" style="-fx-background-color: cyan;" text="Next" />
+   </children>
+</AnchorPane>

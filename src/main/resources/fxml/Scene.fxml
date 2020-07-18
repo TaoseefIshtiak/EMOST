@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="453.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.quanfield.emost.FXMLController">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="585.0" layoutY="-1.0" opacity="0.76" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@circuit-board-lines-5907432.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="11.0" layoutY="14.0" prefHeight="16.0" prefWidth="528.0" style="-fx-background-color: black;" text="Welcome to EMost-Consume less power for a better future" textFill="#f5eff0">
+         <font>
+            <Font name="KacstBook" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="billerId" layoutX="179.0" layoutY="98.0" />
+      <Label layoutX="43.0" layoutY="70.0" prefHeight="16.0" prefWidth="171.0" style="-fx-background-color: black;" text="Enter your biller id below" textFill="WHITE" />
+      <Button fx:id="getStartedBtn" layoutX="234.0" layoutY="214.0" mnemonicParsing="false" onAction="#getStartedAction" prefHeight="45.0" prefWidth="137.0" style="-fx-background-color: #FFFAF0;" text="Get Started" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,6 @@
+fan 1   100 W      qauantity 1
+fan 1   100 W      qauantity 1
+fan 1   100 W      qauantity 1
+fan 1   100 W      qauantity 1
+fan 1   100 W      qauantity 1
+end

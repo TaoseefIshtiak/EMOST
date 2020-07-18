@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="605.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.quanfield.emost.FXMLController">
+   <children>
+      <Label layoutX="50.0" layoutY="44.0" text="Enter you last day's Power Consumption" />
+      <TextField fx:id="lastDayUsage" layoutX="346.0" layoutY="39.0" onAction="#LastDayUsageAction" promptText="Enter in Watts" />
+      <Slider fx:id="slider" layoutX="52.0" layoutY="111.0" majorTickUnit="10.0" minorTickCount="5" onMouseClicked="#clicked" prefHeight="39.0" prefWidth="489.0" showTickLabels="true" showTickMarks="true" style="-fx-background-color: cyan;" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="59.0" />
+      <Label fx:id="dayConmtn" layoutX="309.0" layoutY="208.0" prefHeight="39.0" prefWidth="286.0" />
+      <TextArea fx:id="totalApplianceList" layoutX="52.0" layoutY="206.0" prefHeight="236.0" prefWidth="250.0" />
+      <Button layoutX="125.0" layoutY="164.0" mnemonicParsing="false" onAction="#fianlAppliancesButton" prefHeight="26.0" prefWidth="338.0" style="-fx-background-radius: 10;" text="Give your Preferences for Added Appliances" />
+      <RadioButton layoutX="99.0" layoutY="78.0" mnemonicParsing="false" onAction="#wattageAction" text="Choose In Wattage" />
+      <RadioButton layoutX="291.0" layoutY="77.0" mnemonicParsing="false" onAction="#currencyAction" text="Choose In Currency" />
+      <Label fx:id="addPriority" layoutX="369.0" layoutY="335.0" />
+      <TextField fx:id="piority" layoutX="415.0" layoutY="365.0" onAction="#priorityAction" prefHeight="26.0" prefWidth="45.0" />
+      <Button layoutX="401.0" layoutY="283.0" mnemonicParsing="false" onAction="#addPriorityAction" style="-fx-background-radius: 30;" text="Add Priority" />
+      <Button layoutX="496.0" layoutY="365.0" mnemonicParsing="false" onAction="#nextPriorityAction" text="Next" />
+      <Button layoutX="401.0" layoutY="461.0" mnemonicParsing="false" onAction="#weatherPageAction" text="weather" />
+      <Label fx:id="ranking" layoutX="314.0" layoutY="407.0" prefHeight="16.0" prefWidth="280.0" />
+      <Label layoutX="125.0" layoutY="530.0" text="Enter Your City Name" />
+      <TextField fx:id="cityName" layoutX="282.0" layoutY="525.0" promptText="City Name" />
+   </children>
+</AnchorPane>

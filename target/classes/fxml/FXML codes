@@ -1,0 +1,33 @@
+@FXML
+    private TextField billerId;
+    @FXML
+    private Button getStartedBtn;
+    @FXML
+    private TextField appliancesName;
+    @FXML
+    private TextField appliancesWattage;
+    @FXML
+    private TextField appliancesNumber;
+    @FXML
+    private label applianceListDisplay;
+
+@FXML
+    private void getStartedAction(ActionEvent event) throws Exception{
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/Get Started.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            //stage.getIcons().add(new Image("/fxml/Pictures/bus pic.jpg"));
+            stage.setTitle("Get Started");
+            stage.setScene(new Scene(root1));
+            stage.show();
+            stage.setResizable(false);
+            //stage.getIcons().add(new Image("/fxml/Pictures/bus pic.jpg"));
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+
+
+
+
